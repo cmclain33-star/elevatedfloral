@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Brand – Welcome</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #f8fafc;
+    }
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: white;
+    }
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+    p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+    .cta {
+      display: inline-block;
+      background: #3b82f6;
+      color: white;
+      padding: 0.9rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .cta:hover {
+      background: #2563eb;
+      transform: translateY(-2px);
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #64748b;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>Welcome to Your Brand</h1>
+    <p>A simple, fast, and beautiful starting point for your website. Replace this text with your own message.</p>
+    <a href="#contact" class="cta">Get Started</a>
+  </section>
+
+  <footer>
+    &copy; 2026 Your Brand. All rights reserved.
+  </footer>
+</body>
+</html>
