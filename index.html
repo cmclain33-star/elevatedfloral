@@ -24,57 +24,23 @@
       padding: 2.5rem 1rem;
       color: #4a3f35;
       position: relative;
-      overflow-x: hidden;
+      overflow: hidden;
     }
 
-    /* Stronger watercolor graphics */
-    .watercolor-left {
+    /* Watercolor flower decorations */
+    .flower {
       position: absolute;
-      top: 5%;
-      left: -60px;
-      width: 340px;
-      height: 340px;
-      background: radial-gradient(circle, rgba(232, 150, 165, 0.55) 0%, rgba(232, 150, 165, 0) 70%);
-      border-radius: 50%;
-      filter: blur(25px);
+      opacity: 0.55;
       z-index: 0;
+      pointer-events: none;
     }
 
-    .watercolor-right {
-      position: absolute;
-      bottom: 5%;
-      right: -70px;
-      width: 380px;
-      height: 380px;
-      background: radial-gradient(circle, rgba(230, 190, 90, 0.5) 0%, rgba(230, 190, 90, 0) 70%);
-      border-radius: 50%;
-      filter: blur(28px);
-      z-index: 0;
-    }
-
-    .watercolor-top {
-      position: absolute;
-      top: -80px;
-      right: 12%;
-      width: 260px;
-      height: 260px;
-      background: radial-gradient(circle, rgba(210, 160, 180, 0.45) 0%, transparent 70%);
-      border-radius: 50%;
-      filter: blur(22px);
-      z-index: 0;
-    }
-
-    .watercolor-bottom-left {
-      position: absolute;
-      bottom: -50px;
-      left: 10%;
-      width: 220px;
-      height: 220px;
-      background: radial-gradient(circle, rgba(240, 170, 140, 0.4) 0%, transparent 70%);
-      border-radius: 50%;
-      filter: blur(20px);
-      z-index: 0;
-    }
+    .flower-1 { top: 4%; left: -20px; width: 220px; transform: rotate(-15deg); }
+    .flower-2 { top: 8%; right: -30px; width: 200px; transform: rotate(20deg); }
+    .flower-3 { bottom: 6%; left: -40px; width: 240px; transform: rotate(10deg); }
+    .flower-4 { bottom: 10%; right: -20px; width: 210px; transform: rotate(-25deg); }
+    .flower-5 { top: 42%; left: -60px; width: 160px; opacity: 0.4; }
+    .flower-6 { top: 38%; right: -50px; width: 150px; opacity: 0.4; }
 
     .container {
       position: relative;
@@ -99,7 +65,6 @@
       font-weight: 600;
       color: #5c4a3d;
       margin-bottom: 0.35rem;
-      letter-spacing: 0.4px;
     }
 
     .tagline {
@@ -147,51 +112,75 @@
       z-index: 1;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 600px) {
+      .flower-1, .flower-2, .flower-3, .flower-4 {
+        width: 150px;
+      }
+      .flower-5, .flower-6 {
+        display: none;
+      }
       .logo {
         max-width: 280px;
-      }
-      h1 {
-        font-size: 1.55rem;
-      }
-      .contact-item {
-        font-size: 1.05rem;
-      }
-      .watercolor-left,
-      .watercolor-right {
-        width: 220px;
-        height: 220px;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Stronger watercolor graphics -->
-  <div class="watercolor-left"></div>
-  <div class="watercolor-right"></div>
-  <div class="watercolor-top"></div>
-  <div class="watercolor-bottom-left"></div>
+
+  <!-- Watercolor-style Dahlia & Sunflower SVGs -->
+  <svg class="flower flower-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="pink1" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#f8b4c0"/>
+        <stop offset="100%" stop-color="#e88a9a" stop-opacity="0.3"/>
+      </radialGradient>
+    </defs>
+    <circle cx="100" cy="100" r="45" fill="url(#pink1)"/>
+    <circle cx="100" cy="100" r="32" fill="#fce4ec" opacity="0.7"/>
+    <circle cx="100" cy="100" r="18" fill="#e91e63" opacity="0.4"/>
+  </svg>
+
+  <svg class="flower flower-2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="yellow1" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#ffe082"/>
+        <stop offset="100%" stop-color="#ffb300" stop-opacity="0.35"/>
+      </radialGradient>
+    </defs>
+    <circle cx="100" cy="100" r="48" fill="url(#yellow1)"/>
+    <circle cx="100" cy="100" r="28" fill="#fff8e1" opacity="0.8"/>
+    <circle cx="100" cy="100" r="12" fill="#ff8f00" opacity="0.5"/>
+  </svg>
+
+  <svg class="flower flower-3" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="pink2" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#f48fb1"/>
+        <stop offset="100%" stop-color="#ec407a" stop-opacity="0.3"/>
+      </radialGradient>
+    </defs>
+    <circle cx="100" cy="100" r="50" fill="url(#pink2)"/>
+    <circle cx="100" cy="100" r="35" fill="#fce4ec" opacity="0.6"/>
+  </svg>
+
+  <svg class="flower flower-4" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="yellow2" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#ffcc80"/>
+        <stop offset="100%" stop-color="#ff9800" stop-opacity="0.35"/>
+      </radialGradient>
+    </defs>
+    <circle cx="100" cy="100" r="46" fill="url(#yellow2)"/>
+    <circle cx="100" cy="100" r="26" fill="#fff3e0" opacity="0.75"/>
+  </svg>
+
+  <svg class="flower flower-5" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="100" cy="100" r="40" fill="#f8bbd0" opacity="0.5"/>
+  </svg>
+
+  <svg class="flower flower-6" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="100" cy="100" r="38" fill="#ffe082" opacity="0.45"/>
+  </svg>
 
   <div class="container">
-    <img src="logo.png" alt="Elevated Floral - The Kopachuck Collection" class="logo">
-
-    <h1>Elevated Floral</h1>
-    <p class="tagline">Handcrafted bouquets of dahlias & sunflowers</p>
-
-    <div class="contact-card">
-      <div class="contact-item phone">
-        Text or call me at<br>
-        <a href="tel:4054768676">405-476-8676</a>
-      </div>
-
-      <div class="contact-item">
-        <a href="mailto:jessica@elevatedfloral.net">jessica@elevatedfloral.net</a>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    © 2026 Elevated Floral · The Kopachuck Collection
-  </footer>
-</body>
-</html>
+    <img src="logo.png" alt="Elev
