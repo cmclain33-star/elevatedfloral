@@ -27,40 +27,52 @@
       overflow-x: hidden;
     }
 
-    /* Soft watercolor floral accents */
+    /* Stronger watercolor graphics */
     .watercolor-left {
       position: absolute;
-      top: 8%;
-      left: -40px;
-      width: 280px;
-      height: 280px;
-      background: radial-gradient(circle, rgba(248, 200, 208, 0.45) 0%, rgba(248, 200, 208, 0) 70%);
+      top: 5%;
+      left: -60px;
+      width: 340px;
+      height: 340px;
+      background: radial-gradient(circle, rgba(232, 150, 165, 0.55) 0%, rgba(232, 150, 165, 0) 70%);
       border-radius: 50%;
-      filter: blur(30px);
+      filter: blur(25px);
       z-index: 0;
     }
 
     .watercolor-right {
       position: absolute;
-      bottom: 10%;
-      right: -50px;
-      width: 320px;
-      height: 320px;
-      background: radial-gradient(circle, rgba(249, 228, 168, 0.4) 0%, rgba(249, 228, 168, 0) 70%);
+      bottom: 5%;
+      right: -70px;
+      width: 380px;
+      height: 380px;
+      background: radial-gradient(circle, rgba(230, 190, 90, 0.5) 0%, rgba(230, 190, 90, 0) 70%);
       border-radius: 50%;
-      filter: blur(35px);
+      filter: blur(28px);
       z-index: 0;
     }
 
     .watercolor-top {
       position: absolute;
-      top: -60px;
-      right: 15%;
-      width: 200px;
-      height: 200px;
-      background: radial-gradient(circle, rgba(232, 210, 220, 0.35) 0%, transparent 70%);
+      top: -80px;
+      right: 12%;
+      width: 260px;
+      height: 260px;
+      background: radial-gradient(circle, rgba(210, 160, 180, 0.45) 0%, transparent 70%);
       border-radius: 50%;
-      filter: blur(25px);
+      filter: blur(22px);
+      z-index: 0;
+    }
+
+    .watercolor-bottom-left {
+      position: absolute;
+      bottom: -50px;
+      left: 10%;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(240, 170, 140, 0.4) 0%, transparent 70%);
+      border-radius: 50%;
+      filter: blur(20px);
       z-index: 0;
     }
 
@@ -98,7 +110,7 @@
     }
 
     .contact-card {
-      background: #fce8ec; /* soft light pink */
+      background: #fce8ec;
       border-radius: 22px;
       padding: 2rem 1.8rem;
       box-shadow: 0 8px 24px rgba(180, 120, 130, 0.12);
@@ -147,17 +159,18 @@
       }
       .watercolor-left,
       .watercolor-right {
-        width: 180px;
-        height: 180px;
+        width: 220px;
+        height: 220px;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Soft watercolor graphics -->
+  <!-- Stronger watercolor graphics -->
   <div class="watercolor-left"></div>
   <div class="watercolor-right"></div>
   <div class="watercolor-top"></div>
+  <div class="watercolor-bottom-left"></div>
 
   <div class="container">
     <img src="logo.png" alt="Elevated Floral - The Kopachuck Collection" class="logo">
